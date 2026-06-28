@@ -25,7 +25,7 @@ export function Contact() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
             I&apos;m open to roles, freelance work, and interesting problems in
-            AI-powered applications and full-stack engineering. The fastest way
+            AI powered applications and full stack engineering. The fastest way
             to reach me is email.
           </p>
 

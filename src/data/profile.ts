@@ -8,15 +8,15 @@ export const profile = {
   name: "Muhammad Abdullah",
   shortName: "Abdullah",
   title: "Senior Full Stack Engineer",
-  specialization: "Specializing in AI-Powered Applications",
+  specialization: "Specializing in AI Powered Applications",
   yearsExperience: "5+",
   // Compact stack line shown under the hero specialization.
   stack: ["TypeScript", "NestJS", "Next.js", "LangChain", "AWS", "Agentic AI"],
   tagline:
-    "I build AI-powered applications and the production systems behind them — agentic developer tools, conversational analytics, enterprise data pipelines, and cloud-native backends.",
+    "I build AI powered applications and the production systems behind them: agentic developer tools, conversational analytics, enterprise data pipelines, and cloud native backends.",
   about: [
-    "I'm a Senior Full Stack Engineer with 5+ years building production software end to end, and my focus today is AI-powered applications. I design and ship agentic developer tools, conversational analytics, and the data and backend systems that make them work reliably in production.",
-    "I've built multi-agent coding assistants, natural-language interfaces over enterprise data warehouses, and memory-bounded streaming pipelines feeding AWS Redshift — while leading engineers, setting code-review and QA standards, and turning business requirements into technical roadmaps.",
+    "I'm a Senior Full Stack Engineer with 5+ years building production software end to end, and my focus today is AI powered applications. I design and ship agentic developer tools, conversational analytics, and the data and backend systems that make them work reliably in production.",
+    "I've built multi agent coding assistants, natural language interfaces over enterprise data warehouses, and memory bounded streaming pipelines feeding AWS Redshift, while leading engineers, setting code review and QA standards, and turning business requirements into technical roadmaps.",
   ],
   location: "Islamabad, Pakistan",
   email: "malik3661@live.com",

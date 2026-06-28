@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     "Full Stack Engineer",
     "AI Engineer",
-    "AI-Powered Applications",
+    "AI Powered Applications",
     "Agentic AI",
     "LangChain",
     "RAG",
