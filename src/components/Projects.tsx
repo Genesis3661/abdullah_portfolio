@@ -3,9 +3,11 @@
 import { useMemo, useState } from "react";
 import { SectionHeading } from "./SectionHeading";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectModal } from "./ProjectModal";
 import {
   projects,
   tierLabels,
+  type Project,
   type ProjectCategory,
   type ProjectTier,
 } from "@/data/projects";
@@ -24,6 +26,7 @@ const tierOrder: ProjectTier[] = ["flagship", "major", "minor"];
 
 export function Projects() {
   const [active, setActive] = useState<ProjectCategory | "All">("All");
+  const [selected, setSelected] = useState<Project | null>(null);
 
   const filtered = useMemo(() => {
     if (active === "All") return projects;
@@ -44,8 +47,8 @@ export function Projects() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Projects"
-          title="Things I've built"
-          description="From flagship enterprise data platforms and agentic AI tools to mobile apps and games."
+          title="Featured Work"
+          description="Agentic AI tools, conversational analytics, and the production data and backend systems behind them. Click any project to explore the details."
         />
 
         <div className="mb-12 flex flex-wrap gap-2">
@@ -73,13 +76,20 @@ export function Projects() {
               </h3>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {group.items.map((project, i) => (
-                  <ProjectCard key={project.name} project={project} index={i} />
+                  <ProjectCard
+                    key={project.name}
+                    project={project}
+                    index={i}
+                    onSelect={setSelected}
+                  />
                 ))}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

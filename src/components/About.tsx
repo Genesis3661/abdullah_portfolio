@@ -7,8 +7,8 @@ import { profile } from "@/data/profile";
 const stats = [
   { value: "5+", label: "Years Experience" },
   { value: "10+", label: "Projects Delivered" },
-  { value: "AI", label: "Agentic Systems" },
-  { value: "AWS", label: "Cloud & Data" },
+  { value: "3+", label: "Production AI Systems" },
+  { value: "Full-Stack", label: "End to End" },
 ];
 
 export function About() {
