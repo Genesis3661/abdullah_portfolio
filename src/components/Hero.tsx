@@ -36,14 +36,28 @@ export function Hero() {
             Hi, I&apos;m <span className="text-gradient">{profile.shortName}</span>
           </h1>
 
-          <p className="mt-4 text-xl font-semibold text-muted sm:text-2xl">
+          <p className="mt-4 text-xl font-semibold sm:text-2xl">
             {profile.title}{" "}
-            <span className="text-accent">· {profile.yearsExperience} yrs</span>
+            <span className="text-muted">· {profile.yearsExperience} yrs</span>
+          </p>
+          <p className="mt-1 text-lg font-medium text-accent sm:text-xl">
+            {profile.specialization}
           </p>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
             {profile.tagline}
           </p>
+
+          <div className="mt-7 flex flex-wrap gap-2">
+            {profile.stack.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-app bg-card px-3 py-1 font-mono text-xs text-muted"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
 
           <div className="mt-6 flex items-center gap-2 text-sm text-muted">
             <MapPin className="h-4 w-4" />
